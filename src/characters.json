@@ -1,0 +1,74 @@
+[{
+        "id": 1,
+        "name": "Wario",
+        "image": "./assets/images/wario.png",
+        "occupation": "Mario Chopped and Screwed"
+    },
+    {
+        "id": 2,
+        "name": "Mario",
+        "image": "./assets/images/mario.png",
+        "occupation": "Franchise Collection Officer"
+    },
+    {
+        "id": 3,
+        "name": "Yoshi",
+        "image": "./assets/images/yoshi.jpg",
+        "occupation": "Mario's Vehicle"
+    },
+    {
+        "id": 4,
+        "name": "Sonic the Hedgehog",
+        "image": "./assets/images/sonic.png",
+        "occupation": "(SEGA's) Franchise Collection Officer"
+    },
+    {
+        "id": 5,
+        "name": "Knuckles",
+        "image": "./assets/images/knuckles.png",
+        "occupation": ""
+    },
+    {
+        "id": 6,
+        "name": "Docteur Eggman",
+        "image": "./assets/images/eggman2.jpg",
+        "occupation": "A Sinister Plotster"
+    },
+    {
+        "id": 7,
+        "name": "Funky Kong",
+        "image": "./assets/images/funky.png",
+        "occupation": "Chills Often"
+    },
+    {
+        "id": 8,
+        "name": "Link",
+        "image": "./assets/images/link.jpg",
+        "occupation": "Cell Shades"
+    },
+    {
+        "id": 9,
+        "name": "Luigi",
+        "image": "./assets/images/luigi.jpg",
+        "occupation": "Follows M's Footsteps"
+    },
+    {
+        "id": 10,
+        "name": "Cartoony Eggman",
+        "image": "./assets/images/eggman.jpg",
+        "occupation": "Transcends Space and Time"
+    },
+    {
+        "id": 11,
+        "name": "Isaac",
+        "image": "./assets/images/isaac.png",
+        "occupation": "Escapes Dungeons"
+    },
+    {
+        "id": 12,
+        "name": "Professor Oak",
+        "image": "./assets/images/oak.png",
+        "occupation": "The Ying to Docteur Eggman's Yang"
+    }
+
+]
