@@ -2,73 +2,85 @@
         "id": 1,
         "name": "Wario",
         "image": "./assets/images/wario.png",
-        "occupation": "Mario Chopped and Screwed"
+        "occupation": "Mario Chopped and Screwed",
+        "clicked": false
     },
     {
         "id": 2,
         "name": "Mario",
         "image": "./assets/images/mario.png",
-        "occupation": "Franchise Collection Officer"
+        "occupation": "Franchise Collection Officer",
+        "clicked": false
     },
     {
         "id": 3,
         "name": "Yoshi",
         "image": "./assets/images/yoshi.jpg",
-        "occupation": "Mario's Vehicle"
+        "occupation": "Mario's Vehicle",
+        "clicked": false
     },
     {
         "id": 4,
         "name": "Sonic the Hedgehog",
         "image": "./assets/images/sonic.png",
-        "occupation": "(SEGA's) Franchise Collection Officer"
+        "occupation": "(SEGA's) Franchise Collection Officer",
+        "clicked": false
     },
     {
         "id": 5,
         "name": "Knuckles",
         "image": "./assets/images/knuckles.png",
-        "occupation": "A Raging Hedgehog"
+        "occupation": "A Raging Hedgehog",
+        "clicked": false
     },
     {
         "id": 6,
         "name": "Docteur Eggman",
         "image": "./assets/images/eggman2.jpg",
-        "occupation": "A Sinister Plotster"
+        "occupation": "A Sinister Plotster",
+        "clicked": false
     },
     {
         "id": 7,
         "name": "Funky Kong",
         "image": "./assets/images/funky.png",
-        "occupation": "Chills Often"
+        "occupation": "Chills Often",
+        "clicked": false
     },
     {
         "id": 8,
         "name": "Link",
         "image": "./assets/images/link.jpg",
-        "occupation": "Cell Shades"
+        "occupation": "Cell Shades",
+        "clicked": false
     },
     {
         "id": 9,
         "name": "Luigi",
         "image": "./assets/images/luigi.jpg",
-        "occupation": "Follows M's Footsteps"
+        "occupation": "Follows M's Footsteps",
+        "clicked": false
     },
     {
         "id": 10,
         "name": "Cartoony Eggman",
         "image": "./assets/images/eggman.jpg",
-        "occupation": "Transcends Space and Time"
+        "occupation": "Transcends Space and Time",
+        "clicked": false
     },
     {
         "id": 11,
         "name": "Isaac",
         "image": "./assets/images/isaac.png",
-        "occupation": "Escapes Dungeons"
+        "occupation": "Escapes Dungeons",
+        "clicked": false
     },
     {
         "id": 12,
         "name": "Professor Oak",
         "image": "./assets/images/oak.png",
-        "occupation": "The Ying to Docteur Eggman's Yang"
+        "occupation": "The Ying to Docteur Eggman's Yang",
+        "clicked": false
     }
 
 ]
