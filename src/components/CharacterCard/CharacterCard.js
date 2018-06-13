@@ -8,7 +8,7 @@ const CharacterCard = props => (
     <div className="img-container">
       <img alt={props.name} src={props.image} />
     </div>
-    <div className="content">
+    {/* <div className="content">
       <ul>
         <li>
           <strong>Name:</strong> {props.name}
@@ -17,7 +17,7 @@ const CharacterCard = props => (
           <strong>Occupation:</strong> {props.occupation}
         </li>
       </ul>
-    </div>
+    </div> */}
   </div>
 );
 
