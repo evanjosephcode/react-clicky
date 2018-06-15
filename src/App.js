@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import CharacterCard from "./components/CharacterCard";
-import Navbar from "./components/Navbar";
+import Wrapper from "./components/Wrapper/Wrapper";
+import Title from "./components/Title/Title";
+import CharacterCard from "./components/CharacterCard/CharacterCard";
+import Navbar from "./components/Navbar/Navbar";
 // charactersArray
 import characters from "./characters.json";
 
