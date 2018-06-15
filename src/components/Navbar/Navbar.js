@@ -7,7 +7,7 @@ export default class Navbar extends Component {
         <nav className="navbar">
         <div className="row mx-auto container-fluid">
             <div className="nav-item col-6 my-auto text-center">
-              Click a character to begin! 
+              Click each character only one time
             </div>
             <div className="nav-item col-6 my-auto text-center">
               Your score : {this.props.userScore} | High score : {this.props.highScore}
