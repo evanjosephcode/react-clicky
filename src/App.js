@@ -4,67 +4,78 @@ import './App.css';
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import CharacterCard from "./components/CharacterCard";
+import Navbar from "./components/Navbar";
 // charactersArray
 import characters from "./characters.json";
-// counter
-// import Counter from "./components/Counter";
+
 
 
 class App extends Component {
 
-  // Setting the initial state of the Counter component
   state = {
     userScore: 0,
-    characters: characters    
+    highScore: 0,
+    characters: characters 
   };
 
+  resetClicked = () => {
+    this.state.characters.map(character =>
+      character.clicked = false
+    )
+  }
 
-  handleCorrect = () => {
-    // We always use the setState method to update a component's state
-    this.setState({ userScore: this.state.count + 1 });
+  handleScore = () => {
+    const newScore = this.state.userScore + 1;
+    this.setState({
+      userScore: newScore
+    })
+    if (newScore >= this.state.highScore) {
+      this.setState({
+        highScore: newScore
+      })
+    }
+    if (newScore === 12) {
+      this.setState({ userScore: 0 });
+      this.resetClicked();
+    }
   };
-
-  // shuffleData = () => {
-  //   // We always use the setState method to update a component's state
-  //   this.setState({ count: this.state.count + 1 });
-  // };
-
-
-
 
   handleClick = (id) => {
-    // randomize them regardless of right or wrong
-    let guessedCorrectly = false;
     for (var i = 0; i < this.state.characters.length; i++) {
       if (id === this.state.characters[i].id) {
         if (this.state.characters[i].clicked === false) {
           this.state.characters[i].clicked = true;
-          this.handleCorrect();
+          this.handleScore();
         }
         else if (this.state.characters[i].clicked === true) {
-          // characters: this.shuffleData needs to be in ({})
-          this.setState({ userScore: 0 })
+          this.setState({ userScore: 0 });
+          this.resetClicked();
         }
       }
     }
+
+    this.setState({
+      characters: characters.sort( () => Math.random() > Math.random() )
+    })
   }
   
 render() {
   return (
     <Wrapper>
       <Title>Videogame Characters List</Title>
-
+      <Navbar userScore={this.state.userScore} highScore={this.state.highScore}/>
+      <div className="container character-box">
       { this.state.characters.map(character => (
-            <CharacterCard
-            
-            id={character.id}
-            name={character.name}
-            image={character.image}
-            occupation={character.occupation}
-            clicked={character.clicked}
-            handleClick={character.handleClick}
+            <CharacterCard            
+              id={character.id}
+              name={character.name}
+              image={character.image}
+              occupation={character.occupation}
+              clicked={character.clicked}
+              handleClick={this.handleClick}
             />
           ))}
+      </div>
     </Wrapper> 
         )
   }

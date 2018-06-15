@@ -4,11 +4,7 @@ import "./CharacterCard.css";
 
 
 const CharacterCard = props => (
-  <div className="card">
-    <div className="img-container">
-      <img alt={props.name} src={props.image} onClick={() => props.handleClick(props.id)}/>
-    </div>
-  </div>
+      <img className="img-fluid" alt={props.name} src={props.image} onClick={() => props.handleClick(props.id)}/>
 );
 
 export default CharacterCard;
