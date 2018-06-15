@@ -62,7 +62,7 @@ class App extends Component {
 render() {
   return (
     <Wrapper>
-      <Title>Videogame Characters List</Title>
+      <Title>Nintendo/Sega Characters Game</Title>
       <Navbar userScore={this.state.userScore} highScore={this.state.highScore}/>
       <div className="container character-box">
       { this.state.characters.map(character => (
